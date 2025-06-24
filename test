@@ -1,0 +1,18 @@
+Question 7:
+
+In order for Structured Streaming to reliably track the exact progress of the processing so that it can handle any kind of failure by restarting and/or reprocessing,
+which of the following two approaches is used by Spark to record the offset range of the data being processed in each trigger?
+
+Options:
+A. ✅ Checkpointing and Write-ahead Logs (✅ Correct Answer)
+B. Structured Streaming cannot record the offset range of the data being processed in each trigger.
+C. Replayable Sources and Idempotent Sinks
+D. Write-ahead Logs and Idempotent Sinks
+E. Checkpointing and Idempotent Sinks
+
+✅ Final Answer:
+A. Checkpointing and Write-ahead Logs
+
+These two mechanisms ensure exactly-once semantics and help Spark recover progress when a failure occurs during stream processing.
+
+
